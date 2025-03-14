@@ -1,0 +1,111 @@
+   /* Top Section */
+  section.top-section .left-image img {
+    border-radius: 10px;
+  }
+  
+  section.top-section .accordions {
+    border-radius: 5px;
+    padding: 50px 40px;
+    background-color: #fff;
+    margin-left: 30px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .accordions .accordion {
+    border-bottom: 1px solid #eee;
+  }
+  
+  .accordions .last-accordion {
+    border-bottom: none;
+  }
+  
+  .accordion-head {
+    padding: 35px 0px !important;
+    font-size: 22px;
+    font-weight: 600;
+    color: #212741;
+    cursor: pointer;
+    transition: color 200ms ease-in-out;
+  }
+  
+  .accordion-head .icon {
+    float: right;
+    transition: transform 200ms ease-in-out;
+  }
+  
+  .accordion-head.is-open {
+    color: #28a745;
+    border-bottom: none;
+  }
+  
+  .accordion-head.is-open .icon {
+    transform: rotate(45deg);
+  }
+  
+  .accordion-body {
+    padding: 0px;
+    overflow: hidden;
+    height: 0;
+    transition: height 300ms ease-in-out;
+    border-bottom: 1px solid #fff;
+  }
+  
+  .accordion-body > .content p {
+    padding: 0px 0px 30px 0px;
+    padding-top: 0;
+  }
+  
+  /* What We Do Section IN About */
+  section.what-we-do {
+    margin-bottom: -30px;
+  }
+  
+  .what-we-do .left-content {
+    margin-right: 60px;
+  }
+  
+  .what-we-do .left-content h4 {
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 40px;
+    margin-bottom: 40px;
+  }
+  
+  .what-we-do .left-content p {
+    margin-bottom: 40px;
+  }
+  
+  .what-we-do .right-items .item {
+    border-radius: 5px;
+    padding: 40px 30px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    position: relative;
+  }
+  
+  .what-we-do .right-items .item em {
+    position: absolute;
+    font-style: normal;
+    font-size: 44px;
+    color: #28a745;
+    font-weight: 600;
+    right: 15px;
+    top: 5px;
+    transition: all 0.3s;
+  }
+  
+  .what-we-do .right-items .item h4 {
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 22px;
+  }
+  
+  .what-we-do .right-items .item:hover em {
+    top: 10px;
+  }
+
+  .simple-cta h4{
+    margin: 0 auto ;
+    color: #fff;
+    padding: 10px 20px;
+  }

@@ -1,0 +1,32 @@
+footer {
+    background-color: #181d30;
+    text-align: center;
+    padding: 25px 0px;
+  }
+  
+  footer p {
+    color: #fff;
+    text-align: center;
+  }
+  
+  footer p a {
+    color: #ff511a;
+  }
+  
+  @media (max-width: 600px) {
+   p {
+ 
+        font-family: 'Arial', sans-serif;
+        font-size: 0.7em; 
+        line-height: 1; 
+        color: #fff; 
+        margin: 20px auto; 
+        text-align: center; 
+        word-wrap: break-word; 
+        transition: all 0.3s ease; 
+      letter-spacing: 0; 
+      padding: 0 0.5em; 
+      max-width: 100%; 
+    }
+  }
+  

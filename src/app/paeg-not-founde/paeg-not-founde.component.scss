@@ -1,0 +1,81 @@
+.page-not-found {
+  height: 100vh;
+  background-color: #212741;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content {
+  text-align: center;
+  padding: 20px;
+}
+
+.content h1 {
+  font-size: 120px;
+  color: #fff;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.content .div-dec {
+  width: 80px;
+  height: 6px;
+  border-radius: 3px;
+  background-color: #fff;
+  margin: 0 auto 20px;
+}
+
+.content h2 {
+  font-size: 56px;
+  color: #fff;
+  font-weight: 700;
+  line-height: 70px;
+  margin-bottom: 20px;
+}
+
+.content h2 em {
+  font-style: normal;
+  color: #ff511a;
+}
+
+.content p {
+  color: #fff;
+  font-size: 18px;
+  max-width: 600px;
+  margin: 0 auto 30px;
+}
+
+.content .buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.content .buttons .green-button a {
+  display: inline-block;
+  padding: 12px 30px;
+  background-color: #28a745;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.content .buttons .green-button a:hover {
+  background-color: #218838;
+}
+
+.content .buttons .orange-button a {
+  display: inline-block;
+  padding: 12px 30px;
+  background-color: #ff511a;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.content .buttons .orange-button a:hover {
+  background-color: #e04a15;
+}

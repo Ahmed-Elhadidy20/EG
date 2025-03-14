@@ -1,0 +1,15 @@
+
+<section class="services" id="Services">
+  <div class="container">
+<a *ngFor="let title of Heding" routerLink="/Our-Services"><h4>{{title.title}}</h4></a> 
+      <div class="row">
+        <div class="col-lg-6" *ngFor="let service of services">
+          <div class="service-item">
+            <i [class]="service.icon"></i>
+            <h4><a [routerLink]="service.route">{{ service.title }}</a></h4>
+            <p>{{ service.description }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>

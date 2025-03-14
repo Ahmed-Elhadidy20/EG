@@ -1,0 +1,221 @@
+
+
+
+
+.navbar {
+  background-color: transparent;
+  height: 80px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  transition: background-color 0.5s ease;
+}
+
+.navbar.scrolled {
+  background-color: #212741;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* باقي الـ CSS كما هو */
+
+.container {
+  padding: 0 15px;
+}
+
+.navbar-brand {
+  line-height: 80px;
+  padding: 0;
+  margin: 0;
+  transition: all 0.3s ease;
+}
+
+.navbar-brand img {
+  max-height: 50px;
+  vertical-align: middle;
+}
+
+.navbar-toggler {
+  border: none;
+  padding: 10px;
+}
+
+.navbar-toggler-icon {
+  width: 30px;
+  height: 20px;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 1%29' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+  transition: all 0.4s ease;
+}
+
+.navbar-nav {
+  margin-top: 10px;
+}
+
+.nav-item {
+  padding: 0 25px;
+}
+
+.nav-link {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: capitalize;
+  line-height: 40px;
+  transition: all 0.3s ease;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: #ff511a;
+}
+
+.dropdown-toggle::after {
+  border: none;
+  border-top: 0.3em solid #fff;
+  border-right: 0.3em solid transparent;
+  border-left: 0.3em solid transparent;
+  vertical-align: middle;
+  margin-left: 5px;
+}
+
+.dropdown-menu {
+  background-color: #fff;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 2px 28px rgba(0, 0, 0, 0.06);
+  min-width: 140px;
+}
+
+@media (min-width: 992px) {
+  .dropdown:hover .dropdown-menu {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+
+  .dropdown-menu {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px);
+    transition: all 0.3s ease;
+    position: absolute;
+  }
+
+  .dropdown-menu.show {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+}
+
+.dropdown-item {
+  color: #2a2a2a;
+  font-size: 12px;
+  font-weight: 400;
+  padding: 10px 20px;
+  background: #f7f7f7;
+  border-bottom: 1px solid #eee;
+  transition: all 0.3s ease;
+}
+
+.dropdown-item:hover,
+.dropdown-item.active {
+  background: #fff;
+  color: #ff511a;
+  padding-left: 25px;
+}
+
+@media (max-width: 991px) {
+  .navbar-nav {
+    margin-top: 0;
+    background-color: #fff;
+    padding: 15px;
+  }
+
+  .nav-item {
+    padding: 0;
+    position: relative;
+  }
+
+  .nav-link {
+    color: #191a20;
+    line-height: 50px;
+    background: #f7f7f7;
+    padding: 0 15px !important;
+  }
+
+  .nav-link:hover,
+  .nav-link.active {
+    background: #eee;
+    color: #ff511a;
+  }
+
+  #navbarNavDropdown .dropdown-menu {
+    width: 100%;
+    position: absolute;
+    box-shadow: 0 2px 28px rgba(0, 0, 0, 0.06);
+    display: none;
+    opacity: 0;
+    transform: translateY(10px);
+    transition: all 0.3s ease;
+  }
+
+  #navbarNavDropdown .dropdown-menu.show {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+
+  .dropdown-toggle::after {
+    border-top-color: #191a20;
+  }
+
+  #navbarNavDropdown .dropdown-item {
+    background: #fff;
+    padding: 10px 20px;
+  }
+
+  #navbarNavDropdown .dropdown-item:hover,
+  #navbarNavDropdown .dropdown-item.active {
+    background: #eee;
+    color: #ff511a;
+    padding-left: 25px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .navbar-brand img {
+    max-height: 100px;
+  }
+
+  .nav-link {
+    font-size: 13px;
+    line-height: 40px;
+  }
+
+  #navbarNavDropdown .dropdown-menu {
+    width: 100%;
+    position: absolute;
+    box-shadow: 0 2px 28px rgba(0, 0, 0, 0.06);
+    display: none;
+    opacity: 0;
+    transform: translateY(10px);
+    transition: all 0.3s ease;
+  }
+
+  #navbarNavDropdown .dropdown-menu.show {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+
+  #navbarNavDropdown .dropdown-item {
+    font-size: 11px;
+    padding: 8px 15px;
+  }
+}

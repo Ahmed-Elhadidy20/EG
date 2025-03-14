@@ -1,0 +1,43 @@
+<div class="section-heading page-heading">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <h1>Digital <em>Marketing</em> Solutions</h1>
+        <div class="div-dec"></div>
+        <p>"Our Marketing Department delivers creative solutions and impactful strategies designed to boost your brand's visibility and engagement. We specialize in reaching your target audience effectively through a blend of traditional and digital marketing techniques. Discover how we can achieve results and grow your business."</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<section class="digital-marketing">
+  <div class="container">
+    <div class="row intro" >
+      <div class="col-lg-6">
+        <div class="left-image">
+          <img src="assets/image/digital-marketing.jpg" alt="Digital Marketing" >
+        </div>
+      </div>
+      <div class="col-lg-6 align-self-center">
+        <div class="right-content">
+          <h4 >Amplify Your Reach</h4>
+          <p>Engage your audience with innovative campaigns tailored to elevate your brand and drive measurable results.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="row solutions-container" >
+      <div class="col-lg-4 col-md-6" *ngFor="let service of digitalMarketingServices; let i = index">
+        <div class="solution-item">
+          <i class="fa" [ngClass]="service.icon"></i>
+          <h5>{{ service.title }}</h5>
+          <p>{{ service.description }}</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="cta-button" >
+      <a routerLink="/contact" class="orange-button">Start Your Campaign</a>
+    </div>
+  </div>
+</section>

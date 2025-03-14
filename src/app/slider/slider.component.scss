@@ -1,0 +1,194 @@
+.carousel {
+  height: calc(100vh - 0px);
+  margin: 0;
+  background-color: #212741;
+}
+
+.carousel-inner {
+  height: 100%;
+}
+
+.carousel-item {
+  overflow: hidden;
+  height: 100%;
+}
+
+.slide-inner {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel-item.active .slide-down {
+  animation: slideDown 0.6s ease-out forwards;
+  opacity: 0;
+}
+
+.carousel-item.active .fade-in {
+  animation: fadeIn 0.8s ease-in 0.2s forwards;
+  opacity: 0;
+}
+
+.carousel-item.active .expand-width {
+  animation: expandWidth 0.8s ease-in 0.4s forwards;
+  opacity: 0;
+  width: 0; 
+}
+
+.carousel-item.active .slide-up {
+  animation: slideUp 0.6s ease-out 0.6s forwards;
+  opacity: 0;
+}
+
+.header-text.centered {
+  width: 80%; 
+  text-align: center; 
+  padding: 20px;
+}
+
+.header-text h2 {
+  font-size: 56px;
+  color: #fff;
+  font-weight: 700;
+  line-height: 70px;
+  margin-bottom: 20px;
+}
+
+.header-text .div-dec {
+  width: 80px; 
+  height: 6px;
+  border-radius: 3px;
+  background-color: #fff;
+  margin: 0 auto 20px; 
+}
+
+.header-text p {
+  color: #fff;
+  margin: 0 auto 30px; 
+  max-width: 600px; 
+}
+
+.header-text h2 em {
+  font-style: normal;
+  color: #ff511a;
+}
+
+.header-text .buttons {
+  display: flex;
+  justify-content: center; 
+  gap: 20px;
+}
+
+.header-text .buttons .green-button a {
+  display: inline-block;
+  padding: 12px 30px;
+  background-color: #28a745;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.header-text .buttons .green-button a:hover {
+  background-color: #218838;
+}
+
+.header-text .buttons .orange-button a {
+  display: inline-block;
+  padding: 12px 30px;
+  background-color: #ff511a;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.header-text .buttons .orange-button a:hover {
+  background-color: #e04a15;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  color: #fff !important;
+  opacity: 0.7;
+  transition: opacity 0.3s;
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+  opacity: 1;
+}
+
+@keyframes slideDown {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes expandWidth {
+  from { opacity: 0; width: 0; }
+  to { opacity: 1; width: 80px; }
+}
+
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@media (max-width: 991px) {
+  .col-lg-6, .col-lg-4 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .intro .left-image {
+    margin-bottom: 30px;
+  }
+  .service-item {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 767px) {
+  .header-text h2 {
+    font-size: 1.5em;
+  }
+@media (max-width: 767px) {
+  .header-text p {
+    display: none;
+    font-size: 0.7em;
+  }
+  .section-heading.page-heading {
+    padding: 80px 0;
+  }
+}
+}
+@media (max-width: 767px) {
+  .header-text .buttons .green-button a {
+    padding: 0.3rem .6rem !important;
+    background-color: #28a745;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+}
+@media (max-width: 767px) {
+  .header-text .buttons .orange-button a {
+    padding: 0.3rem .6rem !important;
+    background-color:#ff511a;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+}

@@ -1,0 +1,44 @@
+<div class="section-heading page-heading" >
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <h1>Graphic <em>Design</em> Solutions</h1>
+          <div class="div-dec"></div>
+          <p>"Our Graphic Design Department crafts visually stunning and impactful designs that elevate your brand identity. From logos to marketing materials, we blend creativity with strategy to deliver designs that captivate and communicate effectively."</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <section class="graphic-design">
+    <div class="container">
+      <div class="row intro" >
+        <div class="col-lg-6">
+          <div class="left-image">
+            <!-- صورة القسم: Graphic Design -->
+            <img src="assets/images/graphic-design.jpg" alt="Graphic Design" >
+          </div>
+        </div>
+        <div class="col-lg-6 align-self-center">
+          <div class="right-content">
+            <h4 >Creative Visual Excellence</h4>
+            <p >Transform your ideas into powerful visuals with our expert design services tailored to your brand."</p>
+          </div>
+        </div>
+      </div>
+  
+      <div class="row services-container" >
+        <div class="col-lg-4 col-md-6" *ngFor="let service of services; let i = index">
+          <div class="service-item" >
+            <i class="fa" [ngClass]="service.icon"></i>
+            <h5>{{ service.title }}</h5>
+            <p>{{ service.description }}</p>
+          </div>
+        </div>
+      </div>
+  
+      <div class="cta-button" >
+        <a routerLink="/contact" class="orange-button">Start Designing Now</a>
+      </div>
+    </div>
+  </section>

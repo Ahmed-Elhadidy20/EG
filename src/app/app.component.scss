@@ -1,0 +1,184 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:100,200,300,400,500,600,700,800,900");
+
+:host {
+  display: block;
+  font-family: 'Poppins', sans-serif;
+
+}
+.web-development {
+  margin-top: 120px;
+  padding: 80px 0;
+  background: linear-gradient(135deg, #f7f7f7 0%, #fff 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.web-development .section-heading {
+  text-align: center;
+  margin-bottom: 70px;
+  position: relative;
+  z-index: 2;
+}
+
+.web-development .section-heading h6 {
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #ff511a;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.web-development .section-heading h4 {
+  margin-top: 10px;
+  font-size: 36px;
+  font-weight: 700;
+  color: #212741;
+  text-transform: capitalize;
+  line-height: 48px;
+}
+
+.web-development .section-heading p {
+  margin-top: 20px;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  color: #666;
+}
+
+.web-development .services-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.web-development .service-item {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 40px;
+  width: 100%;
+  max-width: 360px;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+  transition: all 0.4s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.web-development .service-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+.web-development .service-item i {
+  font-size: 48px;
+  color: #43ba7f;
+  margin-bottom: 25px;
+  transition: all 0.3s ease;
+}
+
+.web-development .service-item:hover i {
+  transform: scale(1.1);
+}
+
+.web-development .service-item h4 {
+  font-size: 22px;
+  font-weight: 600;
+  color: #212741;
+  margin-bottom: 15px;
+}
+
+.web-development .service-item p {
+  color: #666;
+  font-size: 14px;
+}
+
+.web-development .service-item::before {
+  content: '';
+  position: absolute;
+  top: -50px;
+  right: -50px;
+  width: 100px;
+  height: 100px;
+  background: rgba(67, 186, 127, 0.1);
+  border-radius: 50%;
+  transition: all 0.4s ease;
+}
+
+.web-development .service-item:hover::before {
+  transform: scale(1.5);
+}
+
+.web-development .cta-button {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.web-development .cta-button a {
+  font-size: 16px;
+  color: #fff;
+  background-color: #ff511a;
+  padding: 14px 40px;
+  display: inline-block;
+  border-radius: 5px;
+  font-weight: 500;
+  text-transform: capitalize;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.web-development .cta-button a:hover {
+  background-color: #43ba7f;
+  transform: translateY(-3px);
+}
+
+@media (max-width: 992px) {
+  .web-development .service-item {
+    max-width: 100%;
+    margin: 0 15px;
+  }
+}
+
+@media (max-width: 767px) {
+  .web-development {
+    padding: 60px 15px;
+  }
+  
+  .web-development .section-heading h4 {
+    font-size: 28px;
+    line-height: 38px;
+  }
+  
+  .web-development .services-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media (max-width: 991px) {
+  .col-lg-6, .col-lg-4 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .intro .left-image {
+    margin-bottom: 30px;
+  }
+  .service-item {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 767px) {
+  .section-heading h1 {
+    font-size: 2em;
+  }
+@media (max-width: 767px) {
+  .section-heading p {
+    font-size: 0.7em;
+  }
+  .section-heading.page-heading {
+    padding: 80px 0;
+  }
+}
+}
